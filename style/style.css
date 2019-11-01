@@ -1,0 +1,232 @@
+.header {
+  display : none;
+  flex-direction : row;
+  justify-content : flex-end;
+  background-color : orange;
+  opacity : .8;
+  max-height : 10vw;
+}
+
+header form {
+  max-width : 100vw;
+
+}
+
+header form input {
+  width : 13vw;
+  font-family : Verdana, sans-serif;
+  color : black;
+  background-color : pink;
+  font-size : 20px;
+  border : 3px solid black;
+}
+
+header form button {
+  width : 10vw;
+  height : 4vw;
+  margin-left : 2vw;
+}
+
+.mainContainer {
+  border-radius : 10px;
+  background-color : blue;
+  opacity : .8;
+  color : black;
+  margin : 100px auto;
+  max-width : 80vw;
+  height : 30vw;
+}
+
+.mainContainer form {
+  display : flex;
+  flex-direction : row;
+  justify-content : space-evenly;
+  max-width : 80vw;
+  margin : 70px auto;
+}
+
+.mainContainer form input {
+  font-family : Verdana, sans-serif;
+  font-size : 20px;
+  color : black;
+  background-color: pink;
+  padding: 15px 100px;
+  border : 4px solid black;
+  height : 10vh;
+  margin-top : 150px;
+  margin-bottom : 150px;
+}
+
+
+.mainContainer form button {
+  font-family : Verdana, sans-serif;
+  font-size : 150px;
+  color : orange;
+  display: inline-block;
+  text-align : center;
+  width : 150px;
+  height : 150px;
+  margin-top : 100px;
+  margin-bottom : 150px;
+  border-radius : 100px;
+  background-color : blue;
+  border : none;
+}
+
+
+.weatherBox {
+  border-radius : 20px;
+  max-width : 50vw;
+  margin-top : 10vh;
+  max-height : 70vh;
+  margin-left : auto;
+  margin-right : auto;
+  width : 50vw;
+  height : 70vh;
+  background-color : blue;
+  border : 2px solid black;
+  display : none;
+  flex-direction : column;
+  justify-content : space-between;
+}
+
+
+.weatherBox .top {
+  display : flex;
+  flex-direction : row;
+  justify-content : space-between;
+  background-color : blue;
+  border-bottom : 1px solid white;
+  max-height : 20vh;
+  height : 20vh;
+  max-width : 50vw;
+  width : 50vw;
+  border-top-left-radius : 20px;
+  border-top-right-radius : 20px;
+
+}
+
+.weatherBox .top .cityName {
+  background-color : blue;
+  max-width : 25vw;
+  width : 25vw;
+  max-height : 20vh;
+  height : 20vh;
+  border-top-left-radius : 20px;
+  align-content : center;
+  border-right : 3px solid white;
+}
+
+.weatherBox .top .cityName p {
+  font-size : 3vh;
+  margin-top : 3vh;
+  font-family : Verdana, sans-serif;
+  text-align : center;
+}
+
+.weatherBox .top .temperature {
+  background-color : blue;
+  opacity : .8;
+  max-width : 25vw;
+  width : 25vw;
+  max-height : 20vh;
+  height : 20vh;
+  border-top-right-radius : 20px;
+}
+.weatherBox .top .temperature p {
+  font-size : 3vh;
+  margin-top : 3vh;
+  font-family : Verdana, sans-serif;
+  text-align : center;
+}
+
+.weatherBox .bottom {
+  display : flex;
+  flex-direction : row;
+  background-color : orange;
+  opacity : .8;
+  justify-content : space-evenly;
+  max-height : 50vh;
+  height : 50vh;
+  max-width : 50vw;
+  width : 50vw;
+  border-bottom-left-radius : 20px;
+  border-bottom-right-radius : 20px;
+}
+
+.weatherBox .bottom .left {
+  max-height : 50vh;
+  height : 50vh;
+  max-width : 25vw;
+  width : 25vw;
+  border-bottom-left-radius : 20px;
+  border-right : 1px solid white;
+  display : flex;
+  flex-direction : column;
+  align-content : center;
+  justify-content : center;
+}
+
+.weatherBox .bottom .left .weatherDescription {
+  max-width : 25vw;
+  width : 25vw;
+  text-align: center;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+}
+
+.weatherBox .bottom .left .weatherDescription p {
+  font-size : 3vh;
+  margin-top : 3vh;
+  font-family : Verdana, sans-serif;
+}
+
+.weatherBox .bottom .right {
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-content : center;
+  max-height : 50vh;
+  height : 50vh;
+  max-width : 25vw;
+  width : 25vw;
+  border-left : 1px solid white;
+  border-bottom-right-radius : 20px
+}
+
+.weatherBox .bottom .right .minTemp {
+  align-content : center;
+  margin : auto;
+  max-height : 25vh;
+  height : 25vh;
+  max-width : 25vw;
+  width : 25vw;
+  border-bottom : 1px solid white;
+}
+
+.weatherBox .bottom .right .minTemp p {
+  font-size : 3vh;
+  margin-top : 1vh;
+  margin-left : 1vh;
+  font-family : Verdana, sans-serif;
+  text-align : left;
+}
+
+.weatherBox .bottom .right .maxTemp {
+  align-content : center;
+   margin : auto;
+   max-height : 25vh;
+   height : 25vh;
+   max-width : 35vw;
+   width : 35vw;
+   border-top : 1px solid white;
+}
+
+.weatherBox .bottom .right .maxTemp p {
+  font-size : 3vh;
+  margin-top : 1vh;
+  margin-left : 1vh;
+  font-family : Verdana, sans-serif;
+  text-align : left;
+}
