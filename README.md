@@ -1,7 +1,6 @@
 # WEATHER-APP
 
-
-### AN APPLICATION THAT USES ZIP CODES TO DISPLAY THE CURRENT WEATHER
+### A CLIENT-SIDE APPLICATION THAT USES A FOREIGN API TO ACCESS INFORMATION ABOUT THE CURRENT WEATHER USING ZIP CODES.
 
 ### DESCRIPTION
 A browser-based application that uses a foreign api to access information about the current weather based on zip codes.
