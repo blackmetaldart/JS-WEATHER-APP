@@ -9,7 +9,7 @@ document.getElementById('submitHead').addEventListener('click', storeValue2);
 document.getElementById('submitMain').addEventListener('click', showValue);
 document.getElementById('submitHead').addEventListener('click', showValue);
 
-//For EventListeners
+// SWITCHES THE MAIN DISPLAY INTO THE WEATHER BOX
 function showValue (e) {
   //e.preventDefault();
   document.querySelector('.weatherBox').style.display = "flex";
@@ -17,7 +17,7 @@ function showValue (e) {
   document.querySelector('.header').style.display = "flex";
 }
 
-//For Event Listeners
+// FETCHES THE INFORMATION USING THE ZIP IN THE FIRST VALUE BOX
 function storeValue(e) {
   e.preventDefault();
   q = document.getElementById('inputMain').value;
@@ -31,6 +31,7 @@ function storeValue(e) {
 }
 
 
+// FETCHES THE INFORMATION USING THE ZIP IN THE SECOND VALUE BOX
 function storeValue2(e) {
     e.preventDefault();
     q = document.getElementById('inputHead').value;
@@ -43,6 +44,7 @@ function storeValue2(e) {
     .then((response) => {return getData(response);})
   }
 
+// GETS ALL THE DATA TO FILL THE WEATHER BOX
 function getData (data){
   console.log(data)
   var cityName = data.name;
@@ -63,7 +65,7 @@ function getData (data){
   document.querySelector('.weatherDescription').innerHTML = `<p>${weather}</p>`;
 }
 
-//To Change the Temperature
+// CHANGES THE TEMPERATURE INTO FAHRENHEIT
 function changeTemp (temp) {
   temp = temp - 273;
   temp = temp * 1.8;
